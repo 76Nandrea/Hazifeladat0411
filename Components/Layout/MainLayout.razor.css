@@ -39,13 +39,12 @@ main {
 footer {
     background-color: dimgrey;
     justify-content: center;
-    height: 2rem;
+    height: 1rem;
     display: flex;
     text-align: center;
     color: black;
     width: 100%;
-    position: fixed;
-    bottom: 0;
+    font-size:2dvh;
 }
 
 
@@ -86,6 +85,11 @@ footer {
     .top-row, article {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
+    }
+    footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
     }
 }
 
