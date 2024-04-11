@@ -42,8 +42,11 @@ footer {
     height: 2rem;
     display: flex;
     text-align: center;
-    color:black;
-    }
+    color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
 
 
 @media (max-width: 640.98px) {
