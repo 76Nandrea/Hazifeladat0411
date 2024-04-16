@@ -1,0 +1,34 @@
+﻿body {
+    font-family:Arial;
+}
+
+h3{
+    font-size:large;
+    text-decoration-line:underline;
+    font-weight: bold;
+    color:darkblue;
+}
+
+div{
+    background-color:lightgreen;
+}
+#name{
+    color: blue;
+    font-size:8pt;
+}
+
+button{
+    background-color: aqua;
+    color:darkblue;
+}
+button:hover {
+        background-color: yellow;
+    }
+
+label{
+    color: darkblue;
+}
+p{
+    color: darkblue;
+}
+
