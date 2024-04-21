@@ -1,22 +1,23 @@
 ﻿@page "/todo"
 @rendermode InteractiveServer
 
-<h3>Todo: @todos.Count(x=>!x.IsDone) darab</h3>
-<hr/>
+
+<h3>Todo - El kell készíteni: @todos.Count(x=>!x.IsDone) darab feladatot</h3>
 
 
-<div>
+
+<div id="bevitel">
     <input @bind="newTodo" />
-    <button @onclick="AddTodo">Hozzadás</button>
+    <button id="ad" @onclick="AddTodo">Hozzáadás</button>
 </div>
 
-<p>Elvégzett feladat: @todos.Count(x=>x.IsDone) darab</p>
+<p id="kiirat" >Elvégzett feladat: @todos.Count(x=>x.IsDone) darab</p>
 
 
-<ul>
+<ul id="todo">
     @foreach (var item in todos)
     {
-        <li>
+        <li id="sor">
             @*<input @bind="item.Title"/>*@
             <input type="checkbox" @bind="item.IsDone"/>
             @item.Title
@@ -24,6 +25,7 @@
         </li>
     }
 </ul>
+
 
 @code {
     private List<TodoItem> todos = new();

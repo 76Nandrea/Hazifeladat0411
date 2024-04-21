@@ -1,0 +1,63 @@
+﻿
+h3 {
+    font-size:26pt;
+    font-weight: bold;
+    color:red;
+    text-align: center;
+    justify-items: center;
+    font-family:Arial;
+}
+
+#bevitel {
+    background-color: beige;
+}
+#ad {
+    background-color: darkblue;
+    color: white;
+    font-size: 12pt;
+    border-color:darkblue;
+}   
+
+#ad:hover{
+    background-color:darkcyan;
+    color: white;
+}
+
+input {
+    font-size: 12pt;
+    color: darkblue;
+    border-color: darkblue;
+    border-block-start-color:darkblue;
+    border-block-end-color:darkblue;
+    border-inline-color:darkblue;
+    border-block-color:darkblue;
+    border-radius: 2rem;
+}
+
+#kiirat {
+    color:darkgreen;
+    font-weight: bold;
+    font-size: 26pt;
+    font-family:Arial;
+    background-color: beige;
+    text-align: center;
+    height:100%;
+    margin:0;
+    padding:3pt;
+   
+}
+
+#todo{
+    background-color:beige;
+    text-align:left;
+    height:100%
+}
+
+
+#sor{
+    display:block;
+    color:darkblue;
+    font-weight:bold;
+    font-size:12pt;
+}
+
