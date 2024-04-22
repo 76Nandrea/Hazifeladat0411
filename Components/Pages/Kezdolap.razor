@@ -1,12 +1,21 @@
 ﻿@page "/"
 @layout Layout.MainLayoutEmpty
-
+@inject LoginItem LoginItem
+@rendermode InteractiveServer
 
 
 <div class="keret">
 
     <h3>Kezdőlap</h3>
-    <div  class="gomb"> <a href="/home" class="btn btn-success">Bejelentkezés</a>
+
+    <div class="m-3 input-group-sm gap-2 d-flex flex-column">
+        <input type="text" @bind="newUserName" placeholder="Username" />
+        <input  type="password" placeholder="Password" />
+
+    </div>
+
+    <div class="gomb">
+        <a href="/home" class="btn btn-success" @onclick="AddLoginName"><Button Color="ButtonColor.Success"><Icon Name="IconName.Alarm" /> Bejelentkezés </Button></a>
     </div>
 </div>
 
@@ -14,5 +23,23 @@
 
 
 @code {
+    string newUserName = string.Empty;
 
+    //amikor betölt az oldal akkor lefut
+    private void OnInicialised()
+    {
+        newUserName = string.Empty;
+    }
+
+    private void AddLoginName()
+    {
+        if(!string.IsNullOrWhiteSpace(newUserName))
+        {
+            LoginItem.UserName = newUserName;
+        }
+        else
+        {
+            LoginItem.UserName = "Default";
+        }
+    }
 }

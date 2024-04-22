@@ -1,10 +1,14 @@
 using Hazifeladat0411.Components;
+using Hazifeladat0411.Components.Pages;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddBlazorBootstrap();
+builder.Services.AddSingleton<LoginItem>();
 
 var app = builder.Build();
 
